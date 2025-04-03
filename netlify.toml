@@ -1,0 +1,9 @@
+[build]
+  # Directory containing your serverless functions
+  functions = "netlify/functions"
+
+# Configuration for the scheduled function
+[functions]
+  # The name of the function file (without extension) matches the schedule name
+  "daily-superenalotto-check" = { schedule = "@daily" }
+  # You can use cron syntax too, e.g., "0 8 * * *" for 8 AM UTC daily
